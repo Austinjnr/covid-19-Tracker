@@ -1,25 +1,47 @@
-import React from "react";
+import React, { useEffect,useState } from 'react';
+import Overview from './Overview';
+import About from './About'
+import CountryList from './CountryList';
 
-function Homepage(){
-    return(
-        <div>
-            <h1>COVID-19 Tracker</h1>
-            <h3>WELCOME!</h3>
-            <p>COVID-19, also known as the coronavirus disease, 
-                is a highly contagious respiratory illness caused by
-                 the SARS-CoV-2 virus. It was first identified in Wuhan,
-                  China in 2019 and has since spread to affect people in 
-                  countries around the world</p>
+function HomePage() {
+    const [globalData, setGlobalData] = useState({});
+    const [currentSection, setCurrentSection] = useState('overview');
+  
+    useEffect(() => {
+      fetch('https://api.covid19api.com/summary')
+        .then(res => res.json())
+        .then(data => {
+          setGlobalData(data);
+        });
+    }, []);
 
-            
-        </div>
+    const navigateToOverview = () => {
+        setCurrentSection('overview')
+    }
+    const navigateToAbout = () => {
+        setCurrentSection('about')
+    }
+    const navigateToCountryList = () => {
+        setCurrentSection('countryList')
+    }
+  
+  return (
+    <div className="home-page">
+      <h1>COVID-19 Tracker</h1>
+      <h2>WELCOME!</h2>
 
-    )
+      <div>
+        <button onClick={() => navigateToOverview()}>Overview</button>
+        <button onClick={() => navigateToAbout()}>About COVID-19</button>
+        <button onClick={() => navigateToCountryList()}>Countries</button>
+      </div>
+
+        {currentSection === 'overview' && <Overview globalData={globalData} />}
+        {currentSection === 'about' && <About />}
+        {currentSection === 'countries' && <CountryList />}
+        <Overview globalData={globalData} />
+    </div>
+  );
 }
 
-
-
-
-
-
-export default Homepage;
+export default HomePage;
