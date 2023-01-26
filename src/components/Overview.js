@@ -19,7 +19,8 @@ function Overview(props) {
       <p> <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/media-resources/news"> Latest News and Updates</a> </p>
     </div>
   );
-}
+    }
+
 
 
     
