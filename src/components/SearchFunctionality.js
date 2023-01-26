@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Table from "./Table"
+
 
 function Search({ data }) {
     const [searchTerm, setSearchTerm] = useState('');
