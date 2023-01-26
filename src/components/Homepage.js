@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from 'react';
 import Overview from './Overview';
 import About from './About'
-import CountryList from './CountryList';
+import Countries from './Countries'
 
 function HomePage() {
     const [globalData, setGlobalData] = useState({});
@@ -21,8 +21,8 @@ function HomePage() {
     const navigateToAbout = () => {
         setCurrentSection('about')
     }
-    const navigateToCountryList = () => {
-        setCurrentSection('countryList')
+    const navigateToCountries = () => {
+        setCurrentSection('countries')
     }
   
   return (
@@ -33,12 +33,12 @@ function HomePage() {
       <div>
         <button onClick={() => navigateToOverview()}>Overview</button>
         <button onClick={() => navigateToAbout()}>About COVID-19</button>
-        <button onClick={() => navigateToCountryList()}>Countries</button>
+        <button onClick={() => navigateToCountries()}>Countries</button>
       </div>
 
         {currentSection === 'overview' && <Overview globalData={globalData} />}
         {currentSection === 'about' && <About />}
-        {currentSection === 'countries' && <CountryList />}
+        {currentSection === 'countries' && <Countries />}
         <Overview globalData={globalData} />
     </div>
   );

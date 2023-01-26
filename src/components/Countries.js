@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 function Countries() {
-    const [countryData, setCountryData] = useState([]);
+    const [countriesData, setCountriesData] = useState([]);
 
     useEffect(() => {
         fetch('https://api.npoint.io/57e11db613c05d4c58dc/Countries/')
             .then(res => res.json())
             .then(data => {
-                setCountryData(data);
+                setCountriesData(data);
             });
     }, []);
 
@@ -23,7 +23,7 @@ function Countries() {
                     </tr>
                 </thead>
                 <tbody>
-                    {countryData.map(country => (
+                    {countriesData.map(country => (
                         <tr key={country.name}>
                             <td>{country.name}</td>
                             <td>{country.confirmedCases}</td>

@@ -15,7 +15,7 @@ body {
   padding: 5px;
   
 }
-/* button{
+button{
   margin-left: 10px;
   justify-content: space-between;
 }
@@ -26,7 +26,7 @@ body {
   right: 0;
   z-index: 3;
 }
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@ body {
   color: #fff;
   padding: 10px 20px;
 }
-
+ */
 .nav-item {
   color: #fff;
   text-decoration: none;
@@ -48,8 +48,8 @@ body {
 .nav-item.active {
   color: #ccc;
   font-weight: bold;
-} */
-.navbar {
+} 
+ .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,11 +58,11 @@ body {
   color: #fff;
 }
 
-.navbar-links {
+/* .navbar-links {
   display: flex;
-}
+} */
 
-.navbar-links a {
+/* .navbar-links a {
   margin-right: 10px;
   text-decoration: none;
   color: #fff;
@@ -70,7 +70,7 @@ body {
 
 .navbar-links a.active {
   color: #ff0;
-}
+} */
 .home-page {
   text-align: center;
   padding: 50px;
@@ -94,7 +94,7 @@ body {
   border: none;
   font-size: 1rem;
   margin-right: 10px;
-}
+} 
 table {
   width: 100%;
   border-collapse: collapse;
@@ -112,15 +112,15 @@ th {
 .about-container {
   padding: 20px;
   text-align: center;
-}
-
-/* .home-page h1 {
-  color:aquamarine
 } */
-/* .home-page section#about {
+
+.home-page h1 {
+  color:aquamarine
+} 
+.home-page section#about {
   background-color: #f2f2f2;
 }
- */
+ 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
