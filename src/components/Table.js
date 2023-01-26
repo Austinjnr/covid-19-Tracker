@@ -23,8 +23,9 @@ function Table() {
   }, []);
 
   return (
-    
-    <table className="table table-info table-striped-columns">
+    <div className="table-container" style="height: 200px; overflow-y: scroll">
+
+<table className="table table-info table-striped-columns">
       <thead>
         <tr>
         <th> 
@@ -52,6 +53,9 @@ function Table() {
         ))}
       </tbody>
     </table>
+
+    </div>
+    
   );
 }
 
