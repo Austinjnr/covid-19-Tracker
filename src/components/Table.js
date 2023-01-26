@@ -23,7 +23,7 @@ function Table() {
   }, []);
 
   return (
-    <div className="table-container" style="height: 200px; overflow-y: scroll">
+    <div className="table-container height: 100px;  overflow-y: scroll col-sm-6">
 
 <table className="table table-info table-striped-columns">
       <thead>
