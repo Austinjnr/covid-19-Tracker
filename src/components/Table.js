@@ -5,10 +5,17 @@
 import React, { useState, useEffect } from 'react';
 //import SearchFunctionality from './SearchFunctionality';
 //import 'bootstrap';
+//import Container from 'react-bootstrap/Container';
+//import {data} from "./Countries";
+
 
 function Table() {
 
   const [country, setCountry] = useState([]);
+  const [search, setSearch] = useState('');
+  
+
+  console.log(search)
 
   useEffect(() => {
     fetch('https://api.npoint.io/57e11db613c05d4c58dc/Countries/')
@@ -16,34 +23,52 @@ function Table() {
       .then(response => response.json())
       .then(data => setCountry(data))
       .catch(error => console.log(error));
-      
-     
-      
 
   }, []);
 
   return (
+    
     <div className="table-container height: 100px;  overflow-y: scroll col-sm-6">
 
-<table className="table table-info table-striped-columns">
+          <div className="bold-margin">
+          <input
+            type="text"
+            className="form-control"
+            size="lg"
+            placeholder="Search Country"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+
+      <table className="table table-info table-striped-columns">
+  
       <thead>
         <tr>
         <th> 
-            <h3 className="">Countries</h3>
+            <h3 className="table-head-font">Countries</h3>
         </th>
         <th>
-            <h3 className="">Day One Cases</h3>
+            <h3 className="table-head-font">Day One Cases</h3>
         </th>
         <th>
-            <h3 className="">Total Confirmed Cases</h3>
+            <h3 className="table-head-font">Total Confirmed Cases</h3>
         </th>
         <th>
-            <h3 className="">Total Deaths</h3> 
+            <h3 className="table-head-font">Total Deaths</h3> 
         </th>
         </tr>
       </thead>
       <tbody>
-        {country.map(Countries => (
+        {country
+      
+        .filter((data) => {
+          return search.toLowerCase() === ''
+            ? data
+            : data.Country.toLowerCase().includes(search);
+        })
+
+        .map(Countries => (
           <tr key={Countries.id}>
             <td>{Countries.Country}</td>
             <td>{Countries.NewConfirmed}</td>

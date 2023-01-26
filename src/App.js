@@ -2,6 +2,7 @@
 import './App.css';
 import Table from './components/Table';
 import 'bootstrap';
+//import SearchFunctionality from './components/SearchFunctionality';
 
 function App() {
   return (
