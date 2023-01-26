@@ -120,6 +120,19 @@ th {
 .home-page section#about {
   background-color: #f2f2f2;
 }
+ul {
+  list-style-type: none; /* remove bullet points */
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+  font-family: 'Arial', sans-serif; /* change font */
+  font-size: 18px; /* change font size */
+}
+li {
+    padding: 10px; /* add padding to list items */
+    margin-bottom: 10px; /* add margin to list items */
+    background-color:azure/* add background color */
+}
+
  
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
