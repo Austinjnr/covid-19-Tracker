@@ -37,6 +37,7 @@ import Homepage from './components/Homepage'
    
 
     return (
+      <>
       <div className='covid-19'>
          <div className='App'>
       <Homepage/>
@@ -73,6 +74,7 @@ import Homepage from './components/Homepage'
           
 
 </div>
+</>
     )
   }
   
