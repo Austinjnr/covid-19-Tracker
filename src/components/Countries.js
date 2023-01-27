@@ -2757,4 +2757,4 @@ export const data = [
     "TotalConfirmed": 259981,
     "TotalRecovered": 0
     }
-    ]
+]
