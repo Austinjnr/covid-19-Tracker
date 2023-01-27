@@ -2,11 +2,10 @@
 import Homepage from './components/Homepage'
 import React, {useState} from 'react';
 import 'bootstrap'
+import Table from './components/Table';
 import BarGraph from './components/Metrics';
 import LineGraph from './components/LineGraph';
 import {Countries} from './Data.'
-//import {} from "semantic-ui-react"
-//import Line from
 
   function App() {
     const [countries, setCountries]=useState({
@@ -35,13 +34,14 @@ import {Countries} from './Data.'
     
    
 
-    return ( 
-      <>
-      <div className='App'>
-      <Homepage/> 
-      </div> 
+    return (
       <div className=''>
-  
+        <div>
+          <Homepage />
+        </div>
+        <div className='App'>
+                      <Table />
+               </div>
         <h1 className='d-flex justify-content-center'>  
           CoronaVirus Stats 
         </h1>
