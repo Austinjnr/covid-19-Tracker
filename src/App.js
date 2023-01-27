@@ -1,5 +1,5 @@
-////import logo from './logo.svg';
-import './App.css';
+//import React from 'react';
+import Homepage from './components/Homepage'
 import React, {useState} from 'react';
 import 'bootstrap'
 import BarGraph from './components/Metrics';
@@ -38,9 +38,6 @@ import Table from './components/Table';
    
 
     return (
-      <> <div className="App">
-      <Table />
-    </div>
       <div className=''>
   
         <h1 className='d-flex justify-content-center'>  
@@ -79,4 +76,3 @@ import Table from './components/Table';
     
   
 export default App;
-
