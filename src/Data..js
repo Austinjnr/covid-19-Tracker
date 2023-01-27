@@ -1,4 +1,4 @@
-export const data = [
+export const  Countries= [
     {
     "ID": "33c79bd2-570a-49be-bb1f-9d91272561ed",
     "Date": "2023-01-23T03:45:19.923Z",
@@ -2757,4 +2757,5 @@ export const data = [
     "TotalConfirmed": 259981,
     "TotalRecovered": 0
     }
-]
+    ]
+

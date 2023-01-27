@@ -138,3 +138,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.table-head-font {
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
+.bold-margin {
+  margin: 10px;
+}
