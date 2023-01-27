@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import Table from "./Table"
 
 function Search({ data }) {
@@ -20,4 +20,4 @@ function Search({ data }) {
         );
       }
       
-      export default Search;
+      export default Search;*/
