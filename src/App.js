@@ -1,5 +1,5 @@
-//import logo from './logo.svg';
-import './App.css';
+//import React from 'react';
+import Homepage from './components/Homepage'
 import React, {useState} from 'react';
 import 'bootstrap'
 import BarGraph from './components/Metrics';
@@ -7,6 +7,8 @@ import LineGraph from './components/LineGraph';
 import {Countries} from './Data.'
 //import {} from "semantic-ui-react"
 //import Line from
+import Table from './components/Table';
+//import SearchFunctionality from './components/SearchFunctionality';
 
   function App() {
     const [countries, setCountries]=useState({
@@ -36,6 +38,7 @@ import {Countries} from './Data.'
    
 
     return (
+      <>
       <div className=''>
   
         <h1 className='d-flex justify-content-center'>  
@@ -66,8 +69,11 @@ import {Countries} from './Data.'
           
 
 </div>
+</>
     )
   }
   
-export default App;
 
+    
+  
+export default App;

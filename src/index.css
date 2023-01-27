@@ -6,8 +6,144 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.home-page{
+  /* background-image: url(); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:azure;
+  padding: 5px;
+  
+}
+button{
+  margin-left: 10px;
+  justify-content: space-between;
+}
+.nav-buttons {
+  position: relative;
+  top: 2;
+  left: 5;
+  right: 0;
+  z-index: 3;
+}
+/* .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+ */
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
 
+.nav-item:hover {
+  color: #ccc;
+}
+
+.nav-item.active {
+  color: #ccc;
+  font-weight: bold;
+} 
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* .navbar-links {
+  display: flex;
+} */
+
+/* .navbar-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-links a.active {
+  color: #ff0;
+} */
+.home-page {
+  text-align: center;
+  padding: 50px;
+}
+
+.home-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.home-page button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  margin-right: 10px;
+} 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #dddddd;
+}
+.about-container {
+  padding: 20px;
+  text-align: center;
+} */
+
+.home-page h1 {
+  color:aquamarine
+} 
+.home-page section#about {
+  background-color: #f2f2f2;
+}
+ul {
+  list-style-type: none; /* remove bullet points */
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+  font-family: 'Arial', sans-serif; /* change font */
+  font-size: 18px; /* change font size */
+}
+li {
+    padding: 10px; /* add padding to list items */
+    margin-bottom: 10px; /* add margin to list items */
+    background-color:azure/* add background color */
+}
+
+ 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.table-head-font {
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
+.bold-margin {
+  margin: 10px;
 }
