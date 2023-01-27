@@ -7,6 +7,8 @@ import LineGraph from './components/LineGraph';
 import {Countries} from './Data.'
 //import {} from "semantic-ui-react"
 //import Line from
+import Table from './components/Table';
+//import SearchFunctionality from './components/SearchFunctionality';
 
   function App() {
     const [countries, setCountries]=useState({
@@ -35,11 +37,8 @@ import {Countries} from './Data.'
     
    
 
-    return ( 
+    return (
       <>
-      <div className='App'>
-      <Homepage/> 
-      </div> 
       <div className=''>
   
         <h1 className='d-flex justify-content-center'>  
@@ -73,5 +72,8 @@ import {Countries} from './Data.'
 </>
     )
   }
+  
+
+    
   
 export default App;
