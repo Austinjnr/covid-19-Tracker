@@ -38,6 +38,7 @@ import Table from './components/Table';
    
 
     return (
+      <>
       <div className=''>
   
         <h1 className='d-flex justify-content-center'>  
