@@ -6,7 +6,7 @@ import Table from './components/Table';
 import BarGraph from './components/Metrics';
 import LineGraph from './components/LineGraph';
 import {data} from './components/Countries'
-import Homepage from './components/Homepage'
+
 
 
   function App() {
