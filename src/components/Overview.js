@@ -15,7 +15,7 @@ function Overview(props) {
     return(
         <div>
       <h2>Overview</h2>
-      <p>As of <span id="date"></span>, there have been <span id="cases">{globalData.Global?.TotalConfirmed}</span> confirmed cases and <span id="deaths">{globalData.Global?.TotalDeaths}</span> deaths globally.</p>
+      <p>As of now<span id="date"></span>, there have been <span id="cases">{globalData.Global?.TotalConfirmed}</span> confirmed cases and <span id="deaths">{globalData.Global?.TotalDeaths}</span> deaths globally.</p>
       <p> <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/media-resources/news"> Latest News and Updates</a> </p>
     </div>
   );
