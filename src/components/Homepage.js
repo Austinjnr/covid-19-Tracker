@@ -29,7 +29,7 @@ function HomePage() {
     <div className="home-page">
       <h1>COVID-19 Tracker</h1>
       <h2>WELCOME!</h2>
-
+ 
       <div>
         <button onClick={() => navigateToOverview()}>Overview</button>
         <button onClick={() => navigateToAbout()}>About COVID-19</button>
