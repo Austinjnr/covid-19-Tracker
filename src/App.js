@@ -1,7 +1,7 @@
-;
 import './App.css';
 import React, {useState} from 'react';
 import 'bootstrap'
+import Homepage from './components/Homepage'
 import Table from './components/Table';
 import BarGraph from './components/Metrics';
 import LineGraph from './components/LineGraph';
@@ -36,6 +36,10 @@ import {Countries} from './Data.'
 
     return (
       <div className='covid-19'>
+         <div className='App'>
+      <Homepage/>
+
+    </div>
                <div className='App'>
                       <Table />
                </div>
