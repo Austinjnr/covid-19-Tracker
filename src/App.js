@@ -1,18 +1,21 @@
 //import React from 'react';
-import Homepage from './components/Homepage'
+import './App.css';
 import React, {useState} from 'react';
 import 'bootstrap'
+import Homepage from './components/Homepage'
 import Table from './components/Table';
 import BarGraph from './components/Metrics';
 import LineGraph from './components/LineGraph';
-import {Countries} from './Data.'
+import {data} from './components/Countries'
+import Homepage from './components/Homepage'
+
 
   function App() {
     const [countries, setCountries]=useState({
-      labels: Countries.map((info)=>info.CountryCode),
+      labels: data.map((info)=>info.CountryCode),
       datasets:[{
         label:"Infected Population Per Country",
-        data:Countries.map((info)=>info.TotalConfirmed),
+        data:data.map((info)=>info.TotalConfirmed),
         backgroundColor: ['purple'],
          borderColor: ['grey'],
         barPercentage: '1.2',
@@ -21,10 +24,10 @@ import {Countries} from './Data.'
     })
 
     const [deaths, setDeaths]=useState({
-      labels: Countries.map((info)=>info.Country),
+      labels: data.map((info)=>info.Country),
       datasets:[{
         label:"Rate of Deaths Per Country",
-        data:Countries.map((info)=>info.TotalDeaths),
+        data:data.map((info)=>info.TotalDeaths),
         backgroundColor: ['red'],
          borderColor: ['black'],
         barPercentage: '1.2',
@@ -35,14 +38,15 @@ import {Countries} from './Data.'
    
 
     return (
-      <div className=''>
+      <>
+      <div className='covid-19'>
         <div>
-          <Homepage />
+          < Homepage />
         </div>
         <div className='App'>
                       <Table />
                </div>
-        <h1 className='d-flex justify-content-center'>  
+        <h1 className='me-9 d-flex justify-content-center'>  
           CoronaVirus Stats 
         </h1>
   
@@ -58,7 +62,7 @@ import {Countries} from './Data.'
               </div>
         </div>
   
-        <div className="border border-warning-subtle shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <div className=" p-2 g-col-6 border border-warning-subtle shadow-lg p-3 mb-5 bg-body-tertiary rounded">
             <div className="card-body text-bg-light">
                 <h5 className="card-title text-center">
                   A Graph of the Total Deaths Confirmed Against Countries
