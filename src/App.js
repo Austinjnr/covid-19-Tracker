@@ -1,4 +1,5 @@
-import './App.css';
+//import React from 'react';
+import Homepage from './components/Homepage'
 import React, {useState} from 'react';
 import 'bootstrap'
 import Table from './components/Table';
@@ -34,8 +35,11 @@ import {Countries} from './Data.'
    
 
     return (
-      <div className='covid-19'>
-               <div className='App'>
+      <div className=''>
+        <div>
+          <Homepage />
+        </div>
+        <div className='App'>
                       <Table />
                </div>
         <h1 className='d-flex justify-content-center'>  
@@ -66,8 +70,8 @@ import {Countries} from './Data.'
           
 
 </div>
+</>
     )
   }
   
 export default App;
-
