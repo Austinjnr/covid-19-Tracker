@@ -1,6 +1,7 @@
 import React, { useEffect,useState } from 'react';
 import Overview from './Overview';
 import About from './About'
+import 'bootstrap'
 
 function HomePage() {
     const [globalData, setGlobalData] = useState({});
@@ -13,33 +14,35 @@ function HomePage() {
           setGlobalData(data);
         });
     }, []);
-
+    
     const navigateToOverview = () => {
         setCurrentSection('overview')
     }
     const navigateToAbout = () => {
         setCurrentSection('about')
     }
-    const navigateToCountries = () => {
-        setCurrentSection('countries')
-    }
-  
+    
   return (
     <div className="home-page">
-      <h1>COVID-19 Tracker</h1>
-      <h2>WELCOME!</h2>
+      <h1 className=' d-flex justify-content-center'>
+          CoronaVirus Statistical Health Tracker
+      </h1>
+      <h2 className=' d-flex justify-content-center'>WELCOME!</h2>
  
-      <div>
-        <button onClick={() => navigateToOverview()}>Overview</button>
-        <button onClick={() => navigateToAbout()}>About COVID-19</button>
-        {/*<button onClick={() => navigateToCountries()}>Countries</button>*/}
-      </div>
+      <div className=' d-flex justify-content-center'>
+    <button className='btn btn-secondary me-5'
+    onClick={() => navigateToOverview()}>Overview
+    </button>
+    <button className='btn btn-secondary'
+    onClick={() => navigateToAbout()}>About COVID-19
+    </button>
+    {/*<button onClick={() => navigateToCountries()}>Countries</button>*/}
+  </div>
 
-        {currentSection === 'overview' && <Overview globalData={globalData} />}
-        {currentSection === 'about' && <About />}
-       
-        <Overview globalData={globalData} />
-    </div>
+    {currentSection === 'overview' && <Overview globalData={globalData} />}
+    {currentSection === 'about' && <About />}
+</div>
+
   );
 }
 

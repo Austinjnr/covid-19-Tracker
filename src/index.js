@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap'
 import App from './App';
-//import "semantic-ui-react";
-//import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

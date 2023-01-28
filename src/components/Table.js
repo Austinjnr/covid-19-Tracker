@@ -1,12 +1,6 @@
-
-  
-// export default CovidData;
-//Display all day one cases for each country in a table 
 import React, { useState, useEffect } from 'react';
-//import SearchFunctionality from './SearchFunctionality';
-//import 'bootstrap';
-//import Container from 'react-bootstrap/Container';
-//import {data} from "./Countries";
+import 'bootstrap';
+
 
 
 function Table() {

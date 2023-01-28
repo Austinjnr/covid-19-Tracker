@@ -7,15 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .home-page{
-  
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color:azure;
   padding: 5px;
-  
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://dornsife.usc.edu/assets/img/news/story/3758.jpg);
 }
-button{
+/* button{
   margin-left: 10px;
   justify-content: space-between;
 }
@@ -26,7 +23,7 @@ button{
   right: 0;
   z-index: 3;
 }
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +31,7 @@ button{
   color: #fff;
   padding: 10px 20px;
 }
- */
+ 
 .nav-item {
   color: #fff;
   text-decoration: none;
@@ -58,11 +55,11 @@ button{
   color: #fff;
 }
 
-/* .navbar-links {
+.navbar-links {
   display: flex;
-} */
+} 
 
-/* .navbar-links a {
+.navbar-links a {
   margin-right: 10px;
   text-decoration: none;
   color: #fff;
@@ -70,7 +67,7 @@ button{
 
 .navbar-links a.active {
   color: #ff0;
-} */
+} 
 .home-page {
   text-align: center;
   padding: 50px;
@@ -112,7 +109,7 @@ th {
 .about-container {
   padding: 20px;
   text-align: center;
-} */
+} 
 
 .home-page h1 {
   color:aquamarine
@@ -121,16 +118,16 @@ th {
   background-color: #f2f2f2;
 }
 ul {
-  list-style-type: none; /* remove bullet points */
-  padding: 0; /* remove default padding */
-  margin: 0; /* remove default margin */
-  font-family: 'Arial', sans-serif; /* change font */
-  font-size: 18px; /* change font size */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  font-family: 'Arial', sans-serif; 
+  font-size: 18px; 
 }
 li {
-    padding: 10px; /* add padding to list items */
-    margin-bottom: 10px; /* add margin to list items */
-    background-color:azure/* add background color */
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background-color:azure
 }
 
  
@@ -146,4 +143,5 @@ code {
 
 .bold-margin {
   margin: 10px;
-}
+} */
+
