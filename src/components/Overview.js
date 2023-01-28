@@ -55,7 +55,7 @@ function Overview () {
     <p1>For more <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/media-resources/news"> Latest News and Updates</a> </p1>
   </div>
     <div className='data row'>
-          <div className='d-flex col-sm-4 mb-3 mb-sm-0'>
+          <div className='col-sm-6 mb-3 mb-sm-0'>
             <div>
             <Table />
             </div>
