@@ -1,15 +1,29 @@
-# covid-19-Tracker
+# COVID-19-Tracker
 
 This a web application of CoronaVirus statistical data built in react, to access the platform, <a href="https://covid-19-tracker-db3rv2t8v-austinjnr.vercel.app/">here is the live link.</a>
 
 ## Description
 
 COVID-19 Tracker's primary objective is to provide a reliable tracking system to monitor Coronavirus cases across the globe, with the aid of informing the public and fostering improvement and stability in the health sector. 
+The application displays dynamic data such as:
+ * The number of confirmed cases.
+ * The number of confirmed deaths.
 
+ The data is fetched from an API and updated in real-time
+
+ ## Features 
+
+ Display of data for various countries and regions
+
+Real-time updates of data
+
+Historical data visualization
+
+Global statistics for confirmed cases, deaths, and recoveries
 
 ### Installation
 
-RTo use this rep on your machine, requires some simple steps:
+To use this rep on your machine, requires some simple steps:
 - Open a terminal/ command line interface on your computer
 - Clone the repo by;
 
