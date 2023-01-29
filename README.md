@@ -6,6 +6,7 @@ This a web application of CoronaVirus statistical data built in react, to access
 
 COVID-19 Tracker's primary objective is to provide a reliable tracking system to monitor Coronavirus cases across the globe, with the aid of informing the public and fostering improvement and stability in the health sector. 
 The application displays dynamic data such as:
+ * List of f all the countries with COVID-19 cases
  * The number of confirmed cases.
  * The number of confirmed deaths.
 
@@ -45,9 +46,9 @@ To use this rep on your machine, requires some simple steps:
 2. In a new terminal, run `npm start`. This will run your React app
 
 # Technologies Used 
-1. Chartjs
+1. React js for the front end 
 2. React-chartjs-2
-3. Bootstrap
+3. Bootstrap for the styling
 # Authors
 This project was contributed to by:
 - [Austin Obonyo](https://github.com/Austinjnr)
