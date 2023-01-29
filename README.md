@@ -1,6 +1,6 @@
 # covid-19-Tracker
 
-This a web application of CoronaVirus statistical data built in react, to access the platform <a href=" https://covid-19-tracker-db3rv2t8v-austinjnr.vercel.app/"> Here is the live link.</a>>
+This a web application of CoronaVirus statistical data built in react, to access the platform, <a href="https://covid-19-tracker-db3rv2t8v-austinjnr.vercel.app/">here is the live link.</a>
 
 ## Description
 
